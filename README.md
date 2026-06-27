@@ -43,9 +43,10 @@ Predicts the health condition of a tree.
 
 ### Output
 
-- Healthy
+- Excellent
+- Good
 - Moderate
-- Unhealthy
+- Poor
 
 ---
 
@@ -61,7 +62,7 @@ Predicts future growth of the tree.
 
 - Growth Rate
 - Estimated Height Growth
-- Development Trend
+
 
 ---
 
@@ -363,95 +364,17 @@ images/
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository
-
-2. Create a new branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit changes
-
-```bash
-git commit -m "Added new feature"
-```
-
-4. Push changes
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
----
 
 # 👨‍💻 Author
 
 ## **Vipul Alsundkar**
 
-**Software Testing Engineer | Data Analyst | Data Science & Machine Learning Enthusiast**
+**| Data Analyst | Data Science & Machine Learning Enthusiast**
 
-### Skills
-
-- Python
-- Machine Learning
-- SQL
-- Data Analytics
-- Streamlit
-- CatBoost
-- XGBoost
-- Power BI
-- Tableau
-- Selenium
-
-**GitHub**
-
-https://github.com/vipul892
-
-**LinkedIn**
-
-(Add your LinkedIn Profile)
-
-**Email**
-
-(Add your Email)
-
----
 
 # ⭐ Support
 
 If you found this project useful, don't forget to **⭐ Star** this repository.
 
-It motivates me to build more Machine Learning and Data Science projects.
-
----
-
-# 🙏 Acknowledgements
-
-Special thanks to the open-source community and the developers of:
-
-- Python
-- Streamlit
-- CatBoost
-- XGBoost
-- Scikit-learn
-- Pandas
-- NumPy
-- Plotly
-- Matplotlib
-
----
 
 ## 🌳 "Building Smarter Cities with Artificial Intelligence, Machine Learning, and Sustainable Urban Forestry."
