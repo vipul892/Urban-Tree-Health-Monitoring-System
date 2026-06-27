@@ -1,238 +1,193 @@
 # 🌳 Urban Tree Health Monitoring & Smart Plantation Recommendation System
 
-> **An End-to-End Machine Learning Project** for predicting **Tree Health**, **Tree Growth**, **Carbon Absorption**, and **Tree Survival Probability**, along with an intelligent **Plantation Recommendation System** to support sustainable urban forestry and smart city planning.
+> An end-to-end **Machine Learning** project that predicts **Tree Health Status**, **Tree Growth Rate**, **Carbon Absorption**, and **Tree Survival Probability**, while recommending the most suitable tree species for plantation based on environmental and biological conditions.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-green?style=for-the-badge)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
-![CatBoost](https://img.shields.io/badge/CatBoost-ML_Model-yellow?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red?style=for-the-badge&logo=streamlit)
+![CatBoost](https://img.shields.io/badge/CatBoost-Classifier-yellow?style=for-the-badge)
+![XGBoost](https://img.shields.io/badge/XGBoost-Regressor-orange?style=for-the-badge)
 
 ---
 
-# 📖 Table of Contents
+# 📖 Project Overview
 
-- Project Overview
-- Problem Statement
-- Objectives
-- Features
-- Machine Learning Models
-- Dataset
-- Exploratory Data Analysis
-- Data Preprocessing
-- Model Training
-- Model Evaluation
-- Technology Stack
-- Project Structure
-- Installation
-- Running the Application
-- Screenshots
-- Applications
-- Future Scope
-- Contributing
-- License
-- Author
+Urban trees improve air quality, reduce pollution, absorb carbon dioxide, lower urban temperatures, and enhance biodiversity. However, manually monitoring tree health and selecting suitable trees for plantation is time-consuming and expensive.
+
+This project leverages **Machine Learning** to automate urban tree monitoring and decision-making through four predictive models and one recommendation system.
+
+The application is built using **Python**, **Streamlit**, **CatBoost**, and **XGBoost**, providing an interactive dashboard for tree analysis.
 
 ---
 
-# 🌍 Project Overview
+# 🎯 Objectives
 
-Urban trees improve air quality, reduce pollution, lower urban temperatures, absorb carbon dioxide, and enhance biodiversity. However, monitoring tree health manually is difficult, expensive, and time-consuming.
-
-This project uses **Machine Learning** to automate urban tree analysis by predicting:
-
-- 🌳 Tree Health Status
-- 📈 Tree Growth
-- 🌍 Carbon Absorption
-- 🌱 Tree Survival Probability
-
-Additionally, the system recommends the most suitable tree species for plantation based on environmental conditions.
-
-The application is developed using **Python**, **CatBoost**, and **Streamlit**, providing an interactive and user-friendly interface.
-
----
-
-# ❗ Problem Statement
-
-Urban authorities and environmental organizations often struggle with:
-
-- Manual tree health inspections
-- Poor plantation planning
-- Lack of predictive analysis
-- Inefficient resource allocation
-- Limited environmental monitoring
-
-This project addresses these challenges through intelligent Machine Learning models.
-
----
-
-# 🎯 Project Objectives
-
-- Predict urban tree health.
-- Estimate future tree growth.
-- Calculate annual carbon absorption.
-- Predict survival probability.
-- Recommend suitable tree species.
-- Visualize urban forestry data.
-- Support sustainable urban development.
+- Predict the health status of urban trees.
+- Predict tree growth rate.
+- Estimate annual carbon absorption.
+- Predict tree survival probability.
+- Recommend suitable tree species for plantation.
+- Support sustainable urban forestry and smart city planning.
 
 ---
 
 # 🚀 Features
 
-## 🌳 Tree Health Prediction
+## 🌳 Tree Health Status Prediction
 
-Predicts whether a tree is:
+Predicts the health condition of a tree.
+
+### Model
+
+✅ CatBoost Classifier
+
+### Output
 
 - Healthy
 - Moderate
 - Unhealthy
 
-**Algorithm:** CatBoost Classifier
-
 ---
 
-## 📈 Tree Growth Prediction
+## 📈 Tree Growth Rate Prediction
 
-Predicts future growth using environmental and biological features.
+Predicts future growth of the tree.
 
-Outputs include:
+### Model
 
-- Height
-- Trunk Diameter
-- Canopy Width
-- Root Growth
+✅ XGBoost Regressor
 
-**Algorithm:** CatBoost Regressor
+### Output
+
+- Growth Rate
+- Estimated Height Growth
+- Development Trend
 
 ---
 
 ## 🌍 Carbon Absorption Prediction
 
-Predicts annual carbon dioxide absorption.
+Predicts the annual carbon dioxide absorbed by a tree.
 
-Outputs:
+### Model
+
+✅ XGBoost Regressor
+
+### Output
 
 - Carbon Absorption (kg/year)
-- Environmental Contribution
-
-**Algorithm:** CatBoost Regressor
 
 ---
 
 ## 🌱 Tree Survival Probability Prediction
 
-Predicts survival percentage under current environmental conditions.
+Predicts the survival probability of a tree based on environmental conditions.
 
-Outputs:
+### Model
 
-- Survival Probability
-- Risk Category
+✅ CatBoost Regressor
 
-**Algorithm:** CatBoost Classifier
+### Output
+
+- Survival Probability (%)
 
 ---
 
 ## 🌿 Plantation Recommendation System
 
-Recommends suitable tree species based on:
+Recommends the most suitable tree species based on environmental conditions using a rule-based recommendation engine.
+
+Recommendation Factors:
 
 - Temperature
-- Soil Moisture
 - Rainfall
+- Soil Moisture
 - Pollution Level
-- Root Depth
-- Available Space
 - Sunlight
-- Climate
+- Available Space
+- Root Depth
+- Canopy Width
 
 ---
 
-# 📂 Dataset Features
+# 🤖 Machine Learning Models
 
-## 🌳 Tree Information
+| Module | Algorithm |
+|---------|-----------|
+| Tree Health Status | CatBoost Classifier |
+| Tree Growth Rate | XGBoost Regressor |
+| Carbon Absorption | XGBoost Regressor |
+| Survival Probability | CatBoost Regressor |
+| Tree Recommendation | Rule-Based System |
+
+---
+
+# 📊 Dataset Features
+
+### 🌳 Tree Information
 
 - Tree Name
 - Tree Age
-- Species
-- Height
-- Trunk Diameter
-- Canopy Width
-- Root Depth
+- Height (Meter)
+- Trunk Diameter (cm)
+- Canopy Width (m)
+- Root Depth (m)
 
----
-
-## 🌿 Biological Features
+### 🌿 Biological Features
 
 - Leaf Color
 - Root Condition
 - Disease Symptoms
 - Pest Presence
 
----
-
-## 🌍 Environmental Features
+### 🌍 Environmental Features
 
 - Temperature
-- Humidity
 - Rainfall
 - Soil Moisture
+- Humidity
 - Wind Speed
 - Air Pollution
 - Sunlight Exposure
 
 ---
 
-## 🎯 Target Variables
+# 📈 Machine Learning Workflow
 
-- Health Status
-- Growth
-- Carbon Absorption
-- Survival Probability
-
----
-
-# 📊 Exploratory Data Analysis (EDA)
-
-The project includes:
-
-- Missing Value Analysis
-- Feature Distribution
-- Correlation Heatmap
-- Outlier Detection
-- Feature Importance
-- Statistical Summary
-- Target Distribution
-
----
-
-# ⚙ Data Preprocessing
-
-The dataset undergoes:
-
-- Missing Value Handling
-- Label Encoding
-- Feature Engineering
-- Feature Scaling (where applicable)
-- Train-Test Split
+```
+Raw Dataset
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Label Encoding
+      │
+      ▼
+Train/Test Split
+      │
+      ▼
+Model Training
+      │
+      ├───────────────┐
+      ▼               ▼
+ CatBoost         XGBoost
+      │               │
+      ▼               ▼
+Prediction Models
+      │
+      ▼
+Streamlit Deployment
+```
 
 ---
 
-# 🤖 Machine Learning Models
+# 📊 Model Evaluation
 
-| Module | Model |
-|---------|-------|
-| Tree Health Prediction | CatBoost Classifier |
-| Tree Growth Prediction | CatBoost Regressor |
-| Carbon Absorption Prediction | CatBoost Regressor |
-| Survival Probability Prediction | CatBoost Classifier |
-| Recommendation System | Rule-Based Recommendation |
-
----
-
-# 📈 Model Evaluation
-
-## Classification Metrics
+## Classification
 
 - Accuracy
 - Precision
@@ -240,131 +195,102 @@ The dataset undergoes:
 - F1 Score
 - Confusion Matrix
 
----
-
-## Regression Metrics
+## Regression
 
 - R² Score
-- MAE
-- MSE
-- RMSE
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
 
 ---
 
-# 💻 Technology Stack
+# 🛠️ Technology Stack
 
 | Technology | Purpose |
-|------------|----------|
+|------------|---------|
 | Python | Programming Language |
 | Streamlit | Web Application |
 | Pandas | Data Analysis |
 | NumPy | Numerical Computing |
-| Scikit-learn | Preprocessing & Evaluation |
-| CatBoost | Machine Learning |
-| Plotly | Interactive Visualization |
-| Matplotlib | Charts |
-| Joblib | Model Saving |
+| Scikit-learn | Data Preprocessing |
+| CatBoost | Classification & Regression |
+| XGBoost | Regression Models |
+| Plotly | Interactive Dashboard |
+| Matplotlib | Data Visualization |
+| Joblib | Model Serialization |
 
 ---
 
 # 📁 Project Structure
 
 ```
-Urban-Tree-Health-Monitoring-System
+Urban-Tree-Health-Monitoring-System/
 │
-├── dataset/
-│   ├── urban_tree_dataset.csv
-│
-├── models/
-│   ├── health_model.pkl
-│   ├── growth_model.pkl
-│   ├── carbon_model.pkl
-│   ├── survival_model.pkl
-│   └── label_encoders.pkl
-│
-├── notebooks/
-│   └── EDA.ipynb
-│
-├── recommendation/
-│   └── recommendation.py
+├── data/
+│   ├── clean_data/
+│   │   └── encode_tree_dataset_final.csv
+│   │
+│   └── raw_data/
+│       └── trees_indian_dataset.csv
 │
 ├── images/
+│   └── logo.png
 │
-├── app.py
+├── models/
+│   ├── CarbonPrediction_Feature_Columns.pkl
+│   ├── Carbon_Prediction_Model.pkl
+│   ├── frequency_maps.pkl
+│   ├── Growth_feature_columns.pkl
+│   ├── Growth_Prediction_Model.pkl
+│   ├── label_encoder.pkl
+│   ├── ordinal_encoder.pkl
+│   ├── Survival_feature_columns.pkl
+│   ├── Survival_Prediction_Model.pkl
+│   ├── Tree_Health_Classification_Model.pkl
+│   └── Tree_Health_Prediction_Feature_Columns.pkl
+│
+├── notebooks/
+│   ├── catboost info/
+│   ├── CarbonPrediction_Model.ipynb
+│   ├── encoder.ipynb
+│   ├── Exploratory_Data_Analysis.ipynb
+│   ├── Growth_Prediction_Model.ipynb
+│   ├── Survival_Prediction_Model.ipynb
+│   └── Tree_Health_Classification_Model.ipynb
+│
+├── pages/
+│   ├── 1_Health_Prediction.py
+│   ├── 2_Growth_Prediction.py
+│   ├── 3_Carbon_Prediction.py
+│   ├── 4_Survival_Prediction.py
+│   └── 5_Tree_Recommendation.py
+│
+├── utility/
+├── Home.py
 ├── requirements.txt
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
 
-# 🔄 Machine Learning Workflow
+# ⚙️ Installation
 
-```
-Data Collection
-       │
-       ▼
-Data Cleaning
-       │
-       ▼
-EDA
-       │
-       ▼
-Feature Engineering
-       │
-       ▼
-Preprocessing
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
-Model Training
-       │
-       ▼
-Model Evaluation
-       │
-       ▼
-Model Saving
-       │
-       ▼
-Streamlit Deployment
-```
-
----
-
-# ⚙ Installation
-
-## Clone Repository
+Clone the repository
 
 ```bash
 git clone https://github.com/vipul892/Urban-Tree-Health-Monitoring-System.git
 ```
 
-Move to project directory
+Move to project folder
 
 ```bash
 cd Urban-Tree-Health-Monitoring-System
 ```
 
-Create Virtual Environment (Optional)
+Create virtual environment (Optional)
 
 ```bash
 python -m venv venv
-```
-
-Activate Environment
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### Linux / Mac
-
-```bash
-source venv/bin/activate
 ```
 
 Install dependencies
@@ -373,92 +299,67 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
----
-
-# ▶ Run Application
+Run Streamlit
 
 ```bash
-streamlit run app.py
-```
-
-Open browser
-
-```
-http://localhost:8501
+streamlit run Home.py
 ```
 
 ---
 
-# 📸 Application Screenshots
+# 📸 Application Modules
 
-## 🏠 Home Page
-
-> Add screenshot here
-
----
-
-## 🌳 Tree Health Prediction
-
-> Add screenshot here
-
----
-
-## 📈 Tree Growth Prediction
-
-> Add screenshot here
-
----
-
-## 🌍 Carbon Absorption Prediction
-
-> Add screenshot here
-
----
-
-## 🌱 Survival Probability Prediction
-
-> Add screenshot here
-
----
-
-## 🌿 Plantation Recommendation
-
-> Add screenshot here
-
----
-
-## 📊 Dashboard
-
-> Add screenshot here
+- 🏠 Home
+- 🌳 Tree Health Prediction
+- 📈 Tree Growth Prediction
+- 🌍 Carbon Absorption Prediction
+- 🌱 Survival Probability Prediction
+- 🌿 Tree Plantation Recommendation
 
 ---
 
 # 🌍 Applications
 
-- Urban Forestry Management
-- Smart Cities
+- Smart City Planning
+- Urban Forestry
 - Municipal Corporations
 - Environmental Monitoring
-- Climate Change Research
 - Carbon Footprint Analysis
-- Government Forestry Departments
-- Academic Research
-- Sustainable Development Projects
+- Forest Management
+- Climate Change Research
+- Sustainable Development
 
 ---
 
-# 🚀 Future Scope
+# 🚀 Future Enhancements
 
-- 🌐 IoT Sensor Integration
-- 📍 GPS Tree Mapping
-- 🛰 GIS Integration
-- 🌦 Weather API
-- ☁ Cloud Deployment
-- 🤖 Deep Learning Models
-- 📱 Android & iOS Application
-- 🌍 Satellite Image Analysis
-- 📈 Real-Time Monitoring
-- 🧠 Explainable AI (XAI)
+- IoT Sensor Integration
+- Weather API Integration
+- GIS & GPS Mapping
+- Satellite Image Analysis
+- Deep Learning Models
+- Mobile Application
+- Explainable AI (XAI)
+- Real-Time Monitoring
+- Cloud Deployment
+
+---
+
+# 📸 Screenshots
+
+```
+images/
+│
+├── home.png
+├── health_prediction.png
+├── growth_prediction.png
+├── carbon_prediction.png
+├── survival_prediction.png
+├── recommendation.png
+└── dashboard.png
+```
+
+(Add screenshots after uploading.)
 
 ---
 
@@ -466,30 +367,31 @@ http://localhost:8501
 
 Contributions are welcome.
 
-1. Fork this repository.
-2. Create your feature branch.
+1. Fork the repository
+
+2. Create a new branch
 
 ```bash
 git checkout -b feature-name
 ```
 
-3. Commit changes.
+3. Commit changes
 
 ```bash
-git commit -m "Add new feature"
+git commit -m "Added new feature"
 ```
 
-4. Push to GitHub.
+4. Push changes
 
 ```bash
 git push origin feature-name
 ```
 
-5. Open a Pull Request.
+5. Open a Pull Request
 
 ---
 
-# 📜 License
+# 📄 License
 
 This project is licensed under the **MIT License**.
 
@@ -497,9 +399,9 @@ This project is licensed under the **MIT License**.
 
 # 👨‍💻 Author
 
-## Vipul Alsundkar
+## **Vipul Alsundkar**
 
-**Software Testing Engineer | Data Analyst | Data Scientist | Machine Learning Enthusiast**
+**Software Testing Engineer | Data Analyst | Data Science & Machine Learning Enthusiast**
 
 ### Skills
 
@@ -508,10 +410,11 @@ This project is licensed under the **MIT License**.
 - SQL
 - Data Analytics
 - Streamlit
+- CatBoost
+- XGBoost
 - Power BI
 - Tableau
 - Selenium
-- MySQL
 
 **GitHub**
 
@@ -519,29 +422,30 @@ https://github.com/vipul892
 
 **LinkedIn**
 
-Add your LinkedIn profile
+(Add your LinkedIn Profile)
 
 **Email**
 
-Add your email address
+(Add your Email)
 
 ---
 
 # ⭐ Support
 
-If you found this project helpful, please consider giving it a ⭐ **Star** on GitHub.
+If you found this project useful, don't forget to **⭐ Star** this repository.
 
-Your support motivates future improvements and the development of more open-source Machine Learning projects.
+It motivates me to build more Machine Learning and Data Science projects.
 
 ---
 
-# 💚 Acknowledgements
+# 🙏 Acknowledgements
 
 Special thanks to the open-source community and the developers of:
 
 - Python
 - Streamlit
 - CatBoost
+- XGBoost
 - Scikit-learn
 - Pandas
 - NumPy
@@ -550,4 +454,4 @@ Special thanks to the open-source community and the developers of:
 
 ---
 
-## 🌳 *"Empowering Sustainable Urban Forestry through Artificial Intelligence and Machine Learning."*
+## 🌳 "Building Smarter Cities with Artificial Intelligence, Machine Learning, and Sustainable Urban Forestry."
