@@ -349,15 +349,7 @@ streamlit run Home.py
 # 📸 Screenshots
 
 ```
-images/
-│
-├── home.png
-├── health_prediction.png
-├── growth_prediction.png
-├── carbon_prediction.png
-├── survival_prediction.png
-├── recommendation.png
-└── dashboard.png
+
 ```
 
 (Add screenshots after uploading.)
