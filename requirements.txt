@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scikit-learn
+xgboost
+catboost
+joblib
+folium
+geopy
+streamlit-folium
